@@ -1,0 +1,5 @@
+I wrote a parser to turn the input into complete state and I only test correct state(implict/explicit complete state). The optimal path of test1 and test2 could be solved in second. The optimal path of tests with more objects without complex configuration could still be solved in 10 seconds. 
+
+A* algorithm was used in this homework. The heuristic function is the "distance" from current state to goal state, which was defined by the number of all blocks and triangles substract the number of unfit positions. 
+
+h = MAX (1, N(block) + N(triangle) - N(unfit clear state) - N(unfit on state))
